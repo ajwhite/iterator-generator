@@ -25,4 +25,26 @@ describe('Iterator', () => {
     var iterator = iterable(list);
     expect(iterator.next().done).to.be.true;
   });
+  it ('should only iterate over arrays', () => {
+    var iterator = iterable('string');
+    expect(iterator.next().done).to.be.true;
+
+    iterator = iterable(123);
+    expect(iterator.next().done).to.be.true;
+
+    iterator = iterable(true);
+    expect(iterator.next().done).to.be.true;
+
+    iterator = iterable(null);
+    expect(iterator.next().done).to.be.true;
+
+    iterator = iterable();
+    expect(iterator.next().done).to.be.true;
+
+    iterator = iterable({});
+    expect(iterator.next().done).to.be.true;
+
+    iterator = iterable({foo: 'bar'});
+    expect(iterator.next().done).to.be.true;
+  });
 });
