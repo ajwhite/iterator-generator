@@ -16,6 +16,7 @@ var iterator = iterable(list);
 var item = iterator.next();
 while (!item.done) {
   console.log(item.value);
+  item = iterator.next();
 }
 ```
 
