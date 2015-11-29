@@ -4,7 +4,8 @@
   "description": "An ES6 iterator generator",
   "main": "iterator.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --compilers js:babel/register test.js"
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register test.js",
+    "lint": "./node_modules/.bin/eslint iterator.js test.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/ajwhite/iterator-generator#readme",
   "devDependencies": {
     "babel": "^5.0.0",
+    "babel-eslint": "^5.0.0-beta4",
     "chai": "^3.4.1",
     "mocha": "^2.3.4"
   }
