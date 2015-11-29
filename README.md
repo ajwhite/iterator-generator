@@ -9,14 +9,15 @@ npm install iterator-generator --save
 
 ## Usage Example
 ```js
+'use strict';
 import iterable from 'iterator-generator';
+
 var list = ['a', 'b', 'c', 'd'];
 var iterator = iterable(list);
 
-var item = iterator.next();
-while (!item.done) {
+var item;
+while (!(item = iterator.next()).done) {
   console.log(item.value);
-  item = iterator.next();
 }
 ```
 
