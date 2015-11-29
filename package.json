@@ -4,7 +4,7 @@
   "description": "An ES6 iterator generator",
   "main": "iterator.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register test.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/ajwhite/iterator-generator/issues"
   },
-  "homepage": "https://github.com/ajwhite/iterator-generator#readme"
+  "homepage": "https://github.com/ajwhite/iterator-generator#readme",
+  "devDependencies": {
+    "babel": "^5.0.0",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
 }
