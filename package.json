@@ -1,0 +1,23 @@
+{
+  "name": "iterator-generator",
+  "version": "0.1.0",
+  "description": "An ES6 iterator generator",
+  "main": "iterator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajwhite/iterator-generator.git"
+  },
+  "keywords": [
+    "generator",
+    "iterator"
+  ],
+  "author": "Atticus White <contact@atticuswhite.com> (http://atticuswhite.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajwhite/iterator-generator/issues"
+  },
+  "homepage": "https://github.com/ajwhite/iterator-generator#readme"
+}
