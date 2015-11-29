@@ -1,6 +1,6 @@
 # Iterator Generator
 
-An iterable interface to collections
+An iterable interface to collections using ES2015 generators
 
 ## Installation
 ```sh
